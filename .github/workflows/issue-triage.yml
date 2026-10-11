@@ -43,7 +43,7 @@ jobs:
 
             3. Explora el código del repositorio (`CLAUDE.md`, `index.html`, `game.js`, `style.css`) con Read, Grep y Glob para localizar la zona afectada por el issue. Basa el diagnóstico en el código real, no en suposiciones. Si no puedes confirmar algo, dilo explícitamente.
 
-            4. Publica UN solo comentario en el issue con `gh issue comment`. El comentario debe empezar con la línea `<!-- claude-triage -->` y contener estas secciones en español:
+            4. Publica UN solo comentario en el issue con `gh issue comment`. El comentario debe empezar con la línea `<!-- claude-triage -->` y contener estas secciones en español. Todo el contenido del comentario debe estar en formato Markdown que GitHub pueda renderizar correctamente (encabezados, listas, negritas y bloques de código delimitados con triple acento grave):
                - **Resumen**: qué reporta o pide el issue, en 2-3 frases.
                - **Labels asignados**: cuáles y por qué.
                - **Diagnóstico**: causa probable del problema o descripción técnica de lo que habría que implementar, y los archivos y funciones involucrados (por ejemplo `game.js` → `tryRotate`, `collide`).
